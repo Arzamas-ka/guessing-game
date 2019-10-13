@@ -8,19 +8,19 @@ describe('#guess', () => {
         const game = new GuessingGame();
         game.setRange(0, 4048)
 
-        let result = game.guess();
+        let result = game.guess(); // 2024
         game.lower();
-        result = game.guess();
+        result = game.guess(); // 1012
         game.lower();
-        result = game.guess();
+        result = game.guess(); // 506
         game.lower();
-        result = game.guess();
+        result = game.guess(); // 253
         game.greater();
-        result = game.guess();
+        result = game.guess(); // 253 + 126 === 380
         game.greater();
-        result = game.guess();
+        result = game.guess(); // 380 + 190 === 570
         game.lower();
-        result = game.guess();
+        result = game. guess();
         game.lower();
         result = game.guess();
         game.greater();
